@@ -9,6 +9,13 @@ class Vehicle {
         this.mileage = mileage;
         this.started = false;
         this.numberOfWheels = 0;
+        this.fuel = 0;
+    }
+
+
+    addFuel(){
+        this.fuel += 5
+
     }
 
     start() {
@@ -89,3 +96,5 @@ class Vehicle {
 module.exports = {
     Vehicle
 }
+
+export {Vehicle}
